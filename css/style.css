@@ -21,6 +21,7 @@
    background-color: var(--point-color);
    color: var(--white);
    border-radius: 40px;
+   border: none;
 }
 
 img {
@@ -83,7 +84,7 @@ header {
     max-width: 60%;
 }
 
-.hero .text-box h1 {
+.hero .text-box h3 {
     font-size: 48px;
     font-weight: bold;
 }

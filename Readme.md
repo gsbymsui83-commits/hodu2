@@ -12,6 +12,7 @@
   - Flex / Grid 레이아웃을 활용하여 각 섹션에 맞는 UI를 구성한다.
   - 미디어쿼리를 활용하여 모바일 환경(768px 이하)에서 레이아웃이 자연스럽게 변하도록 만든다.
 
+
 - **핵심 구현 포인트**
   1. header : 상단 고정 
   2. Hero 섹션: 텍스트/이미지 좌우배치 구조 → 모바일에서 세로 배치 전환
@@ -26,23 +27,27 @@
 - 왼쪽: 로고 이미지
 - 오른쪽: 내비게이션 링크(Home, Support) + Download 버튼
 - 스크롤을 내려도 헤더가 화면 상단에 고정되도록 처리했습니다.(position:fixed와 z-index)
+![alt text](images/header-fixed.png)
 
 ### 2) Hero Section
 - 랜딩 페이지 첫 화면 영역
 - 텍스트 박스(제목/설명/Download 버튼) + 이미지 박스(고양이 이미지)를 좌우로 배치
 - 데스크톱: 좌우정렬
 - 모바일: 세로 배치로 전환 + 텍스트 중앙 정렬
+![alt text](images/hero-desk-mobile.png)
 
 ### 3) Gallery Section
 #### Gallery-1
 - 큰 이미지 1개 + 설명 텍스트 구조
 - Flex로 좌우 정렬, 모바일에서는 세로 정렬로 변경
+![alt text](images/desk-to-mobile.png)
 
 #### Gallery-2
 - 상단: 제목(h3) + 설명 문단
 - 중단: 3개 이미지 갤러리(Grid 3열)
 - 하단: 설명 문단 + Learn More 버튼(가로 배치)
 - 모바일에서는 Grid를 1열로 바꾸고, 버튼 영역도 세로로 변경했습니다.
+![alt text](images/grid.png)
 
 #### Gallery-3 (Subscribe)
 - 배경색이 다른 강조 카드 UI
@@ -68,14 +73,16 @@
   - Media Query: `max-width: 768px` 기준 반응형 처리
 - **Reset CSS**
   - 브라우저 기본 스타일 차이를 줄이기 위해 reset.css 사용
-
+![alt text](images/arch.png)>
 
 ## ✅ 반응형 동작 정리
+![alt text](images/media.png)
 
 - **768px 초과(데스크톱)**
   - 헤더 네비게이션 표시
   - Hero: 텍스트/이미지 2컬럼
   - Gallery-2: 이미지 Grid 3열
+
 
 - **768px 이하(모바일)**
   - 네비게이션 숨김(`.navbar { display:none; }`)
